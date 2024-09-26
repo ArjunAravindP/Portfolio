@@ -1,13 +1,16 @@
 import "./App.css"
+import HomePage from "./pages/Home"
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
-function App() {
-  return (
-    <>
-      <div className="flex items-center justify-center h-screen">
-        <h1 className="text-3xl font-bold underline bg-black">Hello, Tailwind CSS with Vite!</h1>
-      </div>
-    </>
-  )
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+    errorElement: null
+  },
+  { path: "*", element: <HomePage /> }
+])
+
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App
