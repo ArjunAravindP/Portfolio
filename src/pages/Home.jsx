@@ -1,4 +1,5 @@
 import Expertise from "../components/Expertise"
+import FullStackTools from "../components/FullStackTools"
 import HeroSection from "../components/HeroSection"
 import OverTheYears from "../components/OverTheYears"
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
         <HeroSection />
         <Expertise />
         <OverTheYears />
+        <FullStackTools />
       </div>
     </>
   )
