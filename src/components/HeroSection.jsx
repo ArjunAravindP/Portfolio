@@ -4,11 +4,11 @@ import Curve from "../assets/images/curves.svg"
 export default function HeroSection() {
   return (
     <>
-      <section className="flex flex-row h-[650px] flex-wrap ">
+      <section className="flex flex-row md:h-[650px]  flex-wrap  snap-start ">
         <div className="basis-full md:basis-2/3 bg-mainColor relative z-0">
           <div className="pl-24 pt-48 z-20">
             <h2 className="text-2xl text-white">Hi, I&lsquo;m</h2>
-            <h1 className=" font-bold leading-none text-subColor text-[75px]">
+            <h1 className=" font-bold leading-none text-white text-[75px]">
               Arjun <br />
               Aravind
             </h1>

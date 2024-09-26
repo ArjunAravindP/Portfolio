@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: "#DF6589FF",
-        subColor: "#3C1053FF"
+        mainColor: "#562ac4",
+        subColor: "#c5215b",
+        tadBlue: "#475c9b"
       }
     }
   },
