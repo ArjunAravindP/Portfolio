@@ -26,7 +26,3 @@ BlueDots.propTypes = {
   controls: PropTypes.any,
   classes: PropTypes.string,
 };
-
-BlueDots.defaultProps = {
-  classes: '',
-};

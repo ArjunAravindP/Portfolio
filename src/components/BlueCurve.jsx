@@ -27,7 +27,3 @@ BlueCurve.propTypes = {
   classes: PropTypes.string,
   isRotate: PropTypes.bool,
 };
-
-BlueCurve.defaultProps = {
-  classes: '',
-};

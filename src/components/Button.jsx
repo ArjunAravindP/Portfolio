@@ -21,7 +21,3 @@ Button.propTypes = {
   children: PropTypes.node.isRequired,
   handleClick: PropTypes.any,
 };
-
-Button.defaultProps = {
-  classes: '',
-};
