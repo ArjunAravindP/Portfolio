@@ -48,7 +48,7 @@ export default function FullStackTools() {
       <section className="min-h-screen bg-mainColor md:pt-0 snap-start flex flex-row items-center">
         <motion.div
           ref={sectionRef}
-          className="w-full mx-10 text-center rounded-xl bg-slate-100 grid grid-cols-1 md:grid-cols-3 gap-6 py-7"
+          className="w-full mx-10 text-center rounded-xl bg-slate-100 grid grid-cols-1 md:grid-cols-3 md:gap-6 py-7 my-5"
           initial="hidden"
           animate={controls}
           variants={variants}

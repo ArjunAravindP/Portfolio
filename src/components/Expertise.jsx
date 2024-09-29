@@ -25,7 +25,7 @@ export default function Expertise() {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.3 } // Trigger when 50% of the section is visible
     );
 
     if (section) {
@@ -56,7 +56,7 @@ export default function Expertise() {
     <>
       <section
         ref={sectionRef}
-        className="h-screen md:max-h-[1200px] max-h-[900px] bg-slate-50 snap-start grid md:grid-cols-2 grid-cols-1 relative"
+        className=" md:h-screen md:max-h[950px] h-[1000px] bg-slate-50 snap-start grid md:grid-cols-2 grid-cols-1 relative"
       >
         {/* Left Section */}
         <motion.div
@@ -66,7 +66,7 @@ export default function Expertise() {
           animate={controls}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeInOut' }}
         >
-          <h1 className="text-mainColor text-[50px] font-bold leading-none">
+          <h1 className="text-mainColor text-[40px] md:text-[50px]  font-bold leading-none">
             Full Stack Developer
           </h1>
           <p className="mt-8 text-tadBlue">
@@ -96,7 +96,7 @@ export default function Expertise() {
           animate={controls}
           transition={{ duration: 0.8, ease: 'easeInOut', delay: 0.2 }}
         >
-          <h1 className="text-mainColor text-[50px] font-bold leading-none">
+          <h1 className="text-mainColor text-[40px] md:text-[50px] font-bold leading-none">
             Technical Content Writer
           </h1>
           <p className="mt-8 text-tadBlue">
