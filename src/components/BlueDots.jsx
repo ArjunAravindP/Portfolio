@@ -3,7 +3,7 @@ import Dots from '../assets/images/dotsblue.svg';
 import PropTypes from 'prop-types';
 
 export default function BlueDots({ controls, classes }) {
-  const cssClass = `w-[200px] absolute ${classes}`;
+  const cssClass = `w-[17%] absolute ${classes}`;
 
   const imageAnimation = {
     hidden: { opacity: 0, scale: 1.2 },

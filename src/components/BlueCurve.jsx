@@ -3,7 +3,7 @@ import CurveBlue from '../assets/images/curveBlue.svg';
 import PropTypes from 'prop-types';
 
 export default function BlueCurve({ controls, classes, isRotate }) {
-  const cssClass = `w-[400px] absolute ${classes}`;
+  const cssClass = `w-[35%] absolute ${classes}`;
   const rotate = isRotate ? 180 : 0;
   const curveBlueAnimation = {
     hidden: { rotate: rotate, opacity: 0, scale: 1.2 },
@@ -17,6 +17,7 @@ export default function BlueCurve({ controls, classes, isRotate }) {
       variants={curveBlueAnimation}
       initial="hidden"
       animate={controls}
+      style={{ objectFit: 'cover' }}
       transition={{ duration: 0.8, ease: 'easeInOut' }}
     />
   );

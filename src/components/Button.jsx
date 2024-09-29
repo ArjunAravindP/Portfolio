@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 export default function Button({ classes, children, handleClick }) {
-  const cssClass = `border-[1px] font-bold text-sm border-mainColor w-[300px] py-4 mt-5 text-mainColor ${classes}`;
+  const cssClass = `border-[1px] font-bold text-sm border-mainColor w-[60%] py-4 mt-5 text-mainColor ${classes}`;
 
   return (
     <motion.button

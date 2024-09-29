@@ -25,7 +25,7 @@ export default function Expertise() {
           }
         });
       },
-      { threshold: 0.3 } // Trigger when 50% of the section is visible
+      { threshold: 0.3 } // Trigger when 30% of the section is visible
     );
 
     if (section) {
@@ -60,7 +60,7 @@ export default function Expertise() {
       >
         {/* Left Section */}
         <motion.div
-          className="md:pl-28 pr-10 pl-10 pt-5 md:pt-36 max-w-[650px] h-[250px]"
+          className="md:pl-[10%] pr-10 pl-10 max-w-[650px] flex flex-col justify-center "
           variants={fadeInUp}
           initial="hidden"
           animate={controls}
@@ -90,7 +90,7 @@ export default function Expertise() {
 
         {/* Right Text Section */}
         <motion.div
-          className="pl-10 md:pl-24 pr-10 max-w-[650px] h-[250px]"
+          className="md:pl-[10%] pr-10 pl-10 max-w-[650px] flex flex-col justify-center"
           variants={fadeInUp}
           initial="hidden"
           animate={controls}
