@@ -36,7 +36,7 @@ export default function HeroSection() {
             alt="Curve"
             className="absolute h-[100%] w-[100%] left-0 bottom-0 -z-10 opacity-60"
             initial={{ opacity: 0, scale: 1.2 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 0.5, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeInOut' }}
             style={{ objectFit: 'cover' }}
           />
