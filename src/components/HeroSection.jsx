@@ -1,7 +1,10 @@
-import Hero from '../assets/images/Hero.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Hero from '../assets/images/Hero.webp';
 import Dots from '../assets/images/dots.svg';
 import Curve from '../assets/images/curves.svg';
 import { motion } from 'framer-motion';
+
 export default function HeroSection() {
   return (
     <>
@@ -45,9 +48,22 @@ export default function HeroSection() {
         <div className="h-screen md:h-full md:col-span-1 bg-subColor relative flex flex-col justify-center items-center md:justify-start md:items-start">
           <motion.div
             className="w-[300px] h-[300px] bg-white absolute
-            md:top-1/3 md:left-0 md:-translate-x-1/2 md:-translate-y-1/3 bg-cover bg-center z-10 "
-            style={{ backgroundImage: `url(${Hero})` }}
-          ></motion.div>
+            md:top-1/3 md:left-0 md:-translate-x-1/2 md:-translate-y-1/3 bg-cover bg-center z-10"
+          >
+            {/* Lazy loaded image */}
+            <LazyLoadImage
+              alt="Hero"
+              src={Hero}
+              effect="blur"
+              width="320px"
+              height="320px"
+              style={{ objectFit: 'cover' }}
+              onError={(e) => {
+                e.target.src = 'fallback-image-url.webp';
+              }}
+            />
+          </motion.div>
+
           <motion.div className="w-[300px] h-[300px] bg-transparent absolute border-2 border-white translate-x-12 translate-y-12 md:top-1/3 md:left-0 md:-translate-x-24 md:-translate-y-14"></motion.div>
 
           <motion.img
