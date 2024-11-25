@@ -3,10 +3,12 @@ import { motion, useAnimation } from 'framer-motion';
 import Button from './Button';
 import BlueCurve from './BlueCurve';
 import BlueDots from './BlueDots';
+import { useNavigate } from 'react-router-dom';
 
 export default function Expertise() {
   const controls = useAnimation();
   const sectionRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -46,7 +48,8 @@ export default function Expertise() {
   };
 
   const hanldeSeeWorkClick = () => {
-    window.open('https://github.com/ArjunAravindP', '_blank');
+    // window.open('https://github.com/ArjunAravindP', '_blank');
+    navigate('/projects');
   };
   const hanldeReadArticle = () => {
     window.open('https://www.webtoffee.com/author/arjun/', '_blank');
@@ -75,6 +78,7 @@ export default function Expertise() {
             frontend to backend. My proficiency in the MERN stack allows me to
             create performant and scalable web applications.
           </p>
+
           <Button handleClick={hanldeSeeWorkClick}>SEE MY WORK</Button>
         </motion.div>
 
